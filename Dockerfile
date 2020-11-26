@@ -1,5 +1,4 @@
 FROM nvidia/opencl:devel-ubuntu16.04
-MAINTAINER walderston
 
 
 # Detect GPU indexes automatically
