@@ -21,13 +21,13 @@ RUN apt-get update && apt-get install -y \
 && rm -rf /var/lib/apt/lists/*  \
 && apt-get clean
 
-RUN wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/latest.deb
+# Support for the latest NVIDA GPUS RTX3080/90s
+RUN wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.6/fahclient_7.6.21_amd64.deb
+RUN dpkg -i fahclient_7.6.21_amd64.deb
+RUN rm -f fahclient_7.6.21_amd64.deb
 
-RUN dpkg -i latest.deb
-RUN rm -f latest.deb
-
-RUN wget https://raw.githubusercontent.com/walderston/fahclient/master/config.xml -O /etc/fahclient/config.xml
+# RUN wget https://raw.githubusercontent.com/walderston/fahclient/master/config.xml -O /etc/fahclient/config.xml
 
 
 ENTRYPOINT ["/usr/bin/FAHClient"]
-CMD ["--user=walderston", "--team=223518", "--passkey=3eedf798b1d878f03eedf798b1d878f0", "--gpu=true", "--power=full", "--cause=COVID_19", "--smp=true"]
+CMD ["--user=Anonymous", "--team=0", "--gpu=true", "--smp=true"]
