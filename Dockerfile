@@ -28,4 +28,4 @@ RUN rm -f fahclient_7.6.9_amd64.deb
 
 
 ENTRYPOINT ["/usr/bin/FAHClient"]
-CMD ["--user=Anonymous", "--team=0", "--gpu=true", "--smp=true"]
+CMD ["--user=walderston", "--team=223518", "--passkey=3eedf798b1d878f03eedf798b1d878f0", "--gpu=true", "--power=full", "--cause=COVID_19", "--smp=true"]
