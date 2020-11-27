@@ -1,0 +1,35 @@
+<config>
+  <!-- Folding Core -->
+  <checkpoint v='30'/>
+
+  <!-- Folding Slot Configuration -->
+  <cause v='COVID_19'/>
+  <client-type v='advanced'/>
+
+  <!-- HTTP Server -->
+  <allow v='127.0.0.1,10.10.10.0/24'/>
+
+  <!-- Network -->
+  <proxy v=':8080'/>
+
+  <!-- Remote Command Server -->
+  <command-allow-no-pass v='127.0.0.1'/>
+
+  <!-- Slot Control -->
+  <power v='full'/>
+
+  <!-- User Information -->
+  <passkey v='3eedf798b1d878f03eedf798b1d878f0'/>
+  <team v='223518'/>
+  <user v='walderston'/>
+
+  <!-- Work Unit Control -->
+  <next-unit-percentage v='100'/>
+
+  <!-- Folding Slots -->
+  <slot id='1' type='CPU'>
+    <pause-on-start v='True'/>
+  </slot>
+  <slot id='2' type='GPU'>
+  </slot>
+</config>
